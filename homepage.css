@@ -1,0 +1,478 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+#topNav{
+    background-color: #ffffff;
+    height: 123px;
+    display: flex;
+    padding: 0px 120px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* #topLink, .left{
+    border: 2px solid green;
+} */
+
+.left{
+    width: 50%;
+}
+
+#topLink{
+    text-align: right;
+}
+
+#topLink a{
+    text-decoration: none;
+    color: #777;
+    font-family: "open sans", sans-serif;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+
+#homeLink{
+    border-right: 1px solid #777777;
+}
+
+#contact{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contact > h4{
+    font-size: 15px;
+    color: #444444;
+    font-family: 'open sans',sans-serif;
+    font-weight: lighter;
+    padding: 10PX;
+}
+
+#contact > h4 > i{
+    color: #996600;
+    padding: 0px 8px;
+    font-size: 17px;
+}
+
+
+ #bottomNav{
+    background-color: #996600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottomNav > ul > li{
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+}
+
+#bottomNav > ul > li:hover{
+    background-color: #b98419;
+}
+
+#bottomNav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#bottomNav > ul > li > ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+#bottomNav > ul > li:hover > ul{
+    display: block;
+
+}
+
+#bottomNav > ul > li > ul > li{
+    background-color: #b98419;
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#bottomNav > ul > li > ul > li:hover{
+    background-color: #996600;
+}
+
+#bottomNav > ul > li > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+#bottomNav > ul > li > i{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    display: none;
+}
+
+#bottomNav > ul > li:active > i{
+    display: block;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+  height: max-content;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:show;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  margin: -22px 10px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.prev{
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #996600;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.dark{
+  display: flex;
+  background-color: #444444;
+  justify-content: space-between;
+  padding: 30px ;
+  padding-right: 50px;
+  max-width: 1000px;
+  margin: auto;
+  height: 105px;
+
+}
+
+.yellow{
+  background-color: #996600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 160px;
+}
+.dark > .yellow > a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  font-size: 13px ;
+  font-weight: lighter;
+  width: 180px;
+  justify-content: space-evenly;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px; 
+}
+
+.dark > .yellow > a > i{
+  font-size: 20px;
+}
+.newText{
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: smaller;
+}
+.newText > h3{
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+.note0{
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+.note{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f5f5f5;
+  max-width: 75%; 
+  margin-left:10px;
+  padding: 15px;
+}
+.note1 {
+  max-width: 100%;
+  /* border: 2px solid rgb(128, 0, 6); */
+
+}
+.note > .note1 > h1 > span{
+  border-top: 2px solid #996600;
+  padding:5px 15px 0px 15px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 2;
+  margin-top: 0;
+  color: #2f506c;
+  font-family: 22px 'open sans', sans-serif;
+
+
+}
+.note1 p{
+  color: #555;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 13px;
+    padding: 0 15px 15px 15px;
+    
+
+}
+.note2{
+  text-align: center;
+  color: #996600;
+  font-size: 12px;
+  margin-left: 10px;
+  float: right;
+}
+
+#dean {
+  border: 4px solid white ;
+}
+.qlink {
+  background-color: #f5f5f5;
+  display: inline-block;
+  margin-bottom: 200px;
+  margin-left: 15px ;
+  margin-right: 15px;
+  line-height: 25px;
+  width: 30%;
+}
+#hilink {
+  border-top: 2px solid #996600;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 22px;
+  line-height: 2;
+  color: #2f506c;
+  font-family: 15px 'open sans', sans-serif;
+}
+.asideA {
+  text-decoration: none;
+  text-align: center;
+  color: #996600;
+  list-style-type: none;
+}
+
+.qlink > ul{
+  padding: 15px;
+  padding-top: 0px;
+}
+
+.qlink > ul > li{
+  list-style-type: none;
+  font-size: 13px;
+}
+
+footer{
+  background-color: #444;
+  padding: 30px 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#footerAbout{
+  color: white;
+  width: 20%;
+}
+
+#footerAbout > h3{
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: 'open sans', sans-serif;
+}
+
+#footerAbout > ul{
+  color: #dcdcdc;
+}
+
+#footerAbout > ul > li{
+  list-style-type: none;
+}
+#footerAbout > ul > li >a{
+  color: #dcdcdc;
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#lastFooter{
+  background-color: #2b2b2b;
+  padding: 5px;
+}
+
+#footerMailing{
+  width: 40%;
+}
+
+#footerContactUs{
+  width: 20%;
+  line-height: 20px;
+}
+
+#footerMailing > h3{
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: 'open sans', sans-serif;
+  color: white;
+}
+
+#footerMailing > span{
+  color: #dcdcdc;
+  font-size: 13px;
+  margin: 0px 0px 10px;
+}
+
+#footerMailing > form > input{
+  padding: 10px 15px;
+  padding-bottom: 12px;
+  background-color: white;
+  width: 63%;
+  border: none;
+}
+
+#footerMailing > form > button{
+  background-color: #996600;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+#footerContactUs > h3{
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: 'open sans', sans-serif;
+  color: white;
+}
+
+#footerContactUs > #footerAddress{
+  color: #dcdcdc;
+  font-size: 13px;
+  line-height: 0px;
+}
+
+#footerContactUs > #footerNumber{
+  color: #dcdcdc;
+  font-size: 13px;
+  display: block;
+}
+
+#footerContactUs > a{
+  color: #dcdcdc;
+  font-size: 13px;
+  display: block;
+}
+
+#footerContactUs > #copyright{
+  color: #dcdcdc;
+  font-size: 13px;
+  display: block;
+}
