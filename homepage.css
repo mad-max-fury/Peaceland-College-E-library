@@ -91,6 +91,7 @@ body{
     left: 0px;
     list-style-type: none;
     text-decoration: none;
+    z-index: 2;
 }
 #bottomNav > ul > li:hover > ul{
     display: block;
