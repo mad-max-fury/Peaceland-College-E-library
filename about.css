@@ -202,7 +202,8 @@ aside > input {
     text-decoration: none;
 }
 #BUT-YELLOW{
-    background: linear-gradient( 75deg, #996600, #adadad);
+    background:  #996600;
+    color: white;
 }
 footer{
     background-color: #444;
